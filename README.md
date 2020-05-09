@@ -57,7 +57,38 @@ The following steps are followed in the method:
 This method is used to find the closest cuisine type.
 In this method we find the cosine similarity score between the user input ingredient matrix and the actual data input matrix. We store the scores into the data frame. From the dataframe we pick the top 10 scores and print the corresponding cuisine type.
 
+## Tests:
+I have tested the code with many input ingredients.
+input = ['paprika', 'banana','rice krispies','plain flour', 'ground pepper', 'salt', 'tomatoes']
 
+The output is in the below format.
+```
+Model Accuracy : 72.75898768122015
+Cuisine:  ['indian']
 
+Closest 10 Recipes
+          id    Scores
+28497   8498  0.415908
+18138   9944  0.405546
+3180   49233  0.352461
+32001  13474  0.352267
+37987  30333  0.348387
+13011  30881  0.333593
+20750  18184  0.332843
+22917  47160  0.324110
+19220  40583  0.318538
+12759  44122  0.303510
+```
+- In the above output we display the accuracy of the model.
+- Predict the cuisine type for the input passed.
+- Display the closest 10 recipes
 
+## How to Execute the Code
+----
+- We need to clone the github repository to the local instance using ``` git clone https://github.com/Rajashekar-Veer/cs5293sp20-project3.git ``` code.
+- Navigate to ../cs5293sp-project3 directory.
+- Run the below code to execute the project.
+```
+pipenv run python project3/analyser.py
+```
 
