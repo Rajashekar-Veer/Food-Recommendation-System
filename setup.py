@@ -1,5 +1,12 @@
-[aliases]
-test=pytest
+from setuptools import setup, find_pakages
 
-[tool:pytest]
-norecursedirs = .*, CVS, _darcs, {arch}, *.egg, ven
+setup(
+        name ='project3',
+        version='1.0',
+        author= 'Rajashekar Veerabhadra',
+        author_email='Rajashekar.v@ou.edu',
+        packages=find_packages(exclude=('tests','docs')),
+        setup_requires=['pytest_runner'],
+        tests_requires=['pytest']
+
+)
