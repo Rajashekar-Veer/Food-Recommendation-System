@@ -83,12 +83,5 @@ Closest 10 Recipes
 - Predict the cuisine type for the input passed.
 - Display the closest 10 recipes
 
-## How to Execute the Code
-----
-- We need to clone the github repository to the local instance using ``` git clone https://github.com/Rajashekar-Veer/cs5293sp20-project3.git ``` code.
-- Navigate to ../cs5293sp-project3 directory.
-- Run the below code to execute the project.
-```
-pipenv run python project3/analyser.py
-```
+
 
